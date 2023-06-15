@@ -1,0 +1,17 @@
+//
+//  CurrencyAppApp.swift
+//  CurrencyApp
+//
+//  Created by Hakan Ustunbas on 15.06.2023.
+//
+
+import SwiftUI
+
+@main
+struct CurrencyAppApp: App {
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+    }
+}
