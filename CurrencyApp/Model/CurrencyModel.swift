@@ -7,11 +7,18 @@
 
 import Foundation
 
-struct CurrencyModel {
-    let iconName: String
-    let currencyName: String
-    let curencyRate: Double
-    let difference: Double
+class CurrencyModel: ObservableObject, Identifiable {
+    @Published var iconName: String
+    @Published var currencyName: String
+    @Published var currencyRate: Double
+    @Published var difference: Double
+    
+    init(iconName: String, currencyName: String, currencyRate: Double, difference: Double) {
+          self.iconName = iconName
+          self.currencyName = currencyName
+          self.currencyRate = currencyRate
+          self.difference = difference
+      }
 }
 
 
